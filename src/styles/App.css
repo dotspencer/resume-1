@@ -6,19 +6,23 @@ font-family: 'Heebo', sans-serif;
  */
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+section {
+  display: grid;
+}
 /*--------------HEADER-----------------*/
 .header {
-  display: grid;
   position: fixed;
   text-align: center;
   width: 100vw;
   height: 80px;
+  background-color: white;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 10px;
@@ -29,8 +33,9 @@ body {
   background-color: white;
 }
 .logo {
+  margin: auto;
   grid-area: 1 / 1 / span 1 / span 1;
-  background-color: grey;
+  text-align: center;
 }
 .menu {
   grid-area: 1 / 5 / span 1 / span 1;
@@ -56,3 +61,72 @@ li:active {
 }
 
 /*--------------PROFILE-----------------*/
+.profile {
+  /* background-color: grey; */
+  width: 100vw;
+  height: 600px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.picture {
+  grid-area: 5 / 4 / span 1 / span 1;
+  /* background-color: tomato; */
+}
+.picture img {
+  width: 100%;
+}
+.about {
+  grid-area: 6 / 4 / span 1 / span 1;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  background-color: white;
+  box-shadow: 0 1px 10px 1px rgba(40, 41, 44, 0.12);
+  color: grey;
+}
+/*--------------OVERVIEW-----------------*/
+.overview {
+  width: 100vw;
+  height: 1000px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . o o o o . . . ."
+    ". . . . . . . . . . . ."
+    ". . a a a . . b b b . ."
+    ". . a a a . . b b b . ."
+    ". . . . . . . . . . . ."
+    ". . c c c . . d d d . ."
+    ". . c c c . . d d d . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . .";
+}
+.ovr,
+.a,
+.b,
+.c,
+.d {
+  background-color: lightgrey;
+}
+.ovr {
+  grid-area: o;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
