@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  border: 0;
+  background-color: dimgrey;
+}
+.item-a {
+  grid-area: header;
+}
+.item-a {
+  grid-area: header;
+}
+.item-a {
+  grid-area: header;
+}
+.item-a {
+  grid-area: header;
+}
+section {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(45, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+section > div {
+  background-color: yellow;
+}
