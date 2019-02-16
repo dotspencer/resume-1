@@ -1,4 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 section {
+  background-color: white;
   display: grid;
   width: 100vw;
   height: 100vh;
