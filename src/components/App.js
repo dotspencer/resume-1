@@ -14,14 +14,6 @@ class App extends Component {
         <div className="item" />
         <div className="item" />
         <div className="item" />
-        <div className="item" />
-        <div className="item" />
-        <div className="item" />
-        <div className="item" />
-        <div className="item" />
-        <div className="item" />
-        <div className="item" />
-        <div className="item" />
       </section>
     );
   }

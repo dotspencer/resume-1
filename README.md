@@ -1,2 +1,3 @@
 # resume
-simple single page resume
+
+A simple single-page resume

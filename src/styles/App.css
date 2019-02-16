@@ -9,20 +9,27 @@ section {
   height: 100vh;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 div {
-  background: grey;
+  background-color: grey;
 }
 
 .item-a {
   background: teal;
-  grid-column-start: 2;
-  grid-column-end: span 3;
-  grid-row-start: 3;
-  grid-row-end: span 2;
-
-  grid-area: 2 / 3 / span 3 / span 2;
+  grid-area: 1 / 1 / span 2 / span 1; /* row-start/column-start/row-end/column-end */
+}
+.item-b {
+  background: yellowgreen;
+  grid-area: 2 / 2 / span 2 / span 1;
+}
+.item-c {
+  background-color: steelblue;
+  grid-area: 1 / 2 / span 1 / span 2;
+}
+.item-d {
+  background-color: tomato;
+  grid-area: 3 / 3 / span 1 / span 1;
 }
