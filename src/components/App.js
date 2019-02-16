@@ -6,10 +6,22 @@ class App extends Component {
   render() {
     return (
       <section>
-        <div className="item-a" />
-        <div className="item-b" />
-        <div className="item-c" />
-        <div className="item-d" />
+        <div className="item item-a" />
+        <div className="item item-b" />
+        <div className="item item-c" />
+        <div className="item item-d" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
       </section>
     );
   }
