@@ -14,9 +14,9 @@ section {
   height: 4800px;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(20, 1fr);
-  /* grid-column-gap: 10px;
+  grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-rows: 80px 200px; */
+  grid-template-rows: 80px 200px;
 }
 div {
   background-color: white;
