@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo|Hind|Martel+Sans");
+/*
+font-family: 'Hind', sans-serif;
+font-family: 'Martel Sans', sans-serif;
+font-family: 'Heebo', sans-serif;
+ */
 * {
   box-sizing: border-box;
 }
@@ -6,29 +12,47 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-section {
+/*--------------HEADER-----------------*/
+.header {
   display: grid;
+  position: fixed;
   text-align: center;
-  background-color: #e0e0e0;
   width: 100vw;
-  height: 4800px;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  height: 80px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-rows: 80px 200px;
+  box-shadow: 0 1px 10px 1px rgba(40, 41, 44, 0.12);
 }
-div {
+.header + div {
   background-color: white;
 }
-.profile {
-  grid-area: 2/5/2/5;
-  background-color: lightgreen;
-}
 .logo {
-  grid-area: 1/1/1/1;
-  background-color: tomato;
+  grid-area: 1 / 1 / span 1 / span 1;
+  background-color: grey;
 }
 .menu {
-  grid-area: 1/6/1 / span 3;
+  grid-area: 1 / 5 / span 1 / span 1;
+  font-family: "Hind", sans-serif;
 }
+.menu > ul {
+  position: relative;
+  top: 15%;
+  list-style: none;
+}
+li {
+  display: inline;
+  margin: 0 2px 0 2px;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+  transition: 0.07s ease-out;
+}
+li:hover {
+  color: grey;
+}
+li:active {
+  cursor: default;
+}
+
+/*--------------PROFILE-----------------*/
