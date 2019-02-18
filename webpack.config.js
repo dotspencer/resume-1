@@ -10,6 +10,19 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.svg(\?.*)?$/,
+        issuer: /\.js$/,
+        loader: "svg-inline-loader"
+      },
+      {
+        test: /\.svg/,
+        issuer: /\.scss$/,
+        use: {
+          loader: "svg-url-loader",
+          options: {}
+        }
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ["babel-loader"]

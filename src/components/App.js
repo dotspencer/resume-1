@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+// import "../images/background.svg";
 import "../styles/App.css";
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
             </ul>
           </div>
         </section>
-        <section className="profile">
+        <section className="profile center">
           <div className="item picture">
             <img
               src="https://via.placeholder.com/150x150.png"
@@ -34,12 +34,44 @@ class App extends Component {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
         </section>
-        <section className="overview">
-          <div className="item ovr" />
-          <div className="item a" />
-          <div className="item b" />
-          <div className="item c" />
-          <div className="item d" />
+        <div className="summary center">
+          <h1>This is a Title.</h1>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <section className="overview center">
+          <div className="topics">
+            <h2>Title</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea
+          </div>
+          <div className="topics">
+            <h2>Title</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea
+          </div>
+          <div className="topics">
+            <h2>Title</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea
+          </div>
+          <div className="topics">
+            <h2>Title</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea
+          </div>
         </section>
       </section>
     );
