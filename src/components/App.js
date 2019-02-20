@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-// import "../images/background.svg";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import Main from "./Main";
 import About from "./About";
 import Projects from "./Projects";
 import Education from "./Education";
 import "../styles/App.css";
+
 class App extends Component {
   render() {
     return (
