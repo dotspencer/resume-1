@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-class Projects extends Component {
+class About extends Component {
   render() {
     return (
       <>
         <div className="summary center">
-          <h1>This is Projects.</h1>
+          <h1>This is About.</h1>
           <p>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -15,28 +15,28 @@ class Projects extends Component {
         </div>
         <section className="overview center">
           <div className="topics">
-            <h2>Projects</h2>
+            <h2>About</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea
           </div>
           <div className="topics">
-            <h2>Projects</h2>
+            <h2>About</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea
           </div>
           <div className="topics">
-            <h2>Projects</h2>
+            <h2>About</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea
           </div>
           <div className="topics">
-            <h2>Projects</h2>
+            <h2>About</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -48,4 +48,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default About;
