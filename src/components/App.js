@@ -4,6 +4,7 @@ import Main from "./Main";
 import About from "./About";
 import Projects from "./Projects";
 import Education from "./Education";
+import MainImg from "./MainImg";
 import "../styles/App.css";
 
 class App extends Component {
@@ -13,10 +14,8 @@ class App extends Component {
         <section>
           <section className="header">
             <div className="item logo">
-              <img
-                src="https://via.placeholder.com/50x50.png"
-                alt="profile picture"
-              />
+              {/*<Route exact path="/" component={MainImg} />*/}
+              Trevor J. Smith
             </div>
             <div className="item menu">
               <ul>

@@ -4,16 +4,7 @@ class Projects extends Component {
   render() {
     return (
       <>
-        <div className="summary center">
-          <h1>This is Projects.</h1>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </p>
-        </div>
-        <section className="overview center">
+        <section className="overview marginTop center">
           <div className="topics">
             <h2>Projects</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

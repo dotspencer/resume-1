@@ -7,7 +7,7 @@ class Main extends Component {
         <section className="profile center">
           <div className="item picture">
             <img
-              src="https://via.placeholder.com/150x150.png"
+              src="images/headProfile.svg"
               alt="profile picture"
             />
           </div>
