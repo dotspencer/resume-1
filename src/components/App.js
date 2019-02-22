@@ -20,8 +20,8 @@ class App extends Component {
               <div className="mobileBar">Menu</div>
               <ul>
                 <li>
-                  <NavLink to="/" className="menu">
-                    Home
+                  <NavLink to="/About" className="menu">
+                    About
                   </NavLink>
                 </li>
                 <li>
@@ -30,13 +30,13 @@ class App extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/About" className="menu">
-                    About
+                  <NavLink to="/Projects" className="menu">
+                    Projects
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Projects" className="menu">
-                    Projects
+                  <NavLink to="/" className="menu">
+                    Home
                   </NavLink>
                 </li>
               </ul>
