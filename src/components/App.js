@@ -5,6 +5,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Education from "./Education";
 import "../styles/App.css";
+import "../styles/Menu.css";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
               Trevor J. Smith
             </div>
             <div className="item menu">
+              <div className="mobileBar">Menu</div>
               <ul>
                 <li>
                   <NavLink to="/" className="menu">
@@ -38,6 +40,7 @@ class App extends Component {
                   </NavLink>
                 </li>
               </ul>
+
             </div>
           </section>
           <div className="content">
