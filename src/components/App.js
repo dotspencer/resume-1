@@ -4,7 +4,6 @@ import Main from "./Main";
 import About from "./About";
 import Projects from "./Projects";
 import Education from "./Education";
-import MainImg from "./MainImg";
 import "../styles/App.css";
 
 class App extends Component {
@@ -14,7 +13,6 @@ class App extends Component {
         <section>
           <section className="header">
             <div className="item logo">
-              {/*<Route exact path="/" component={MainImg} />*/}
               Trevor J. Smith
             </div>
             <div className="item menu">
