@@ -4,7 +4,7 @@ class Main extends Component {
   render() {
     return (
       <>
-        <section className="profile center">
+      <div className="profile center">
           <div className="item picture">
             <img
               src="images/headProfile.svg"
@@ -14,7 +14,7 @@ class Main extends Component {
           <div className="item about">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
-        </section>
+          </div>
         <div className="summary center">
           <h1>This is HOME.</h1>
           <p>
