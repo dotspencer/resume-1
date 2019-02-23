@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 443 437" style="enable-background:new 0 0 443 437;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:30;stroke-miterlimit:10;}
+	.st1{stroke:#000000;stroke-miterlimit:10;}
+	.st2{stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+</style>
+<title>menu-icon</title>
+<line class="st0" x1="357" y1="86" x2="86" y2="222"/>
+<line class="st0" x1="86" y1="222" x2="289" y2="351"/>
+<circle cx="357" cy="86" r="76"/>
+<path d="M357,20c36.5,0,66,29.5,66,66s-29.5,66-66,66s-66-29.5-66-66C291.1,49.6,320.6,20.1,357,20 M357,0c-47.5,0-86,38.5-86,86
+	s38.5,86,86,86s86-38.5,86-86S404.5,0,357,0z"/>
+<circle class="st1" cx="86" cy="222" r="76"/>
+<path class="st2" d="M86,156c36.5,0,66,29.5,66,66s-29.5,66-66,66s-66-29.5-66-66C20.1,185.6,49.6,156.1,86,156 M86,136
+	c-47.5,0-86,38.5-86,86s38.5,86,86,86c47.5,0,86-38.5,86-86S133.5,136,86,136L86,136z"/>
+<circle cx="289" cy="351" r="76"/>
+<path d="M289,285c36.5,0,66,29.5,66,66s-29.5,66-66,66s-66-29.5-66-66C223.1,314.6,252.6,285.1,289,285 M289,265
+	c-47.5,0-86,38.5-86,86s38.5,86,86,86s86-38.5,86-86l0,0C375,303.5,336.5,265,289,265z"/>
+</svg>

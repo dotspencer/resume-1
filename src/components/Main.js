@@ -12,11 +12,11 @@ class Main extends Component {
             />
           </div>
           <div className="item about">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Illustrator | Front-End Developer | Writer
           </div>
           </div>
         <div className="summary center">
-          <h1>This is HOME.</h1>
+          <h1>Hi, I'm Trevor</h1>
           <p>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
