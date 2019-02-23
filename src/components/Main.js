@@ -16,7 +16,7 @@ class Main extends Component {
           </div>
           </div>
         <div className="summary center">
-          <h1>Hi, I'm Trevor</h1>
+          <h1>Hi, I'm Trevor.</h1>
           <p>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
