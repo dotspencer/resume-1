@@ -14,7 +14,7 @@ class App extends Component {
           <section className="header">
             <div className="item logo">
               <div className="full">Trevor J. Smith</div>
-              <div className="short"><img src="../images/TJS.svg"/></div>
+              <div className="short">TJS</div>
             </div>
             <div className="item menu">
               <div className="mobileBar">

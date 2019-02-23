@@ -10,28 +10,24 @@
   height           : 80px;
   margin           : 0;
   padding          : 0;
+  opacity          : 1;
   background-color : white;
   box-shadow       : 0 1px 10px 1px rgba(40, 41, 44, 0.1);
   text-align       : center;
-  opacity: 1;
 }
 
 .logo {
-  float        : left;
-  padding: 25px 20px;
-  text-align   : center;
-  opacity: .95;
+  float      : left;
+  padding    : 25px 20px;
+  opacity    : .95;
+  text-align : center;
 }
-.logo .short img{
-  width: 100%;
-  padding-top: 6px;
+
+.logo .short {
+  width       : 30px;
+  font-family : sans-serif;
 }
-.logo .short{
-  width: 30px;
-}
-.full{
-  font-weight: bold;
-}
+
 .menu {
   float        : right;
   margin-right : 40px;
