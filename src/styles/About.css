@@ -1,0 +1,60 @@
+.About div img {
+  width: 100%;
+}
+.About div {
+  margin: 0 auto;
+}
+.About div:not(.livePic) {
+  padding: 30px;
+}
+.livePic {
+  grid-area: prof;
+  width: 50vw;
+  max-width: 300px;
+  /* background-color: red; */
+}
+.up {
+  grid-area: up;
+  /* background-color: pink; */
+}
+.mid {
+  grid-area: mid;
+  /* background-color: green; */
+}
+.bot {
+  grid-area: bot;
+  /* background-color: blue; */
+}
+.up,
+.mid {
+  max-width: 700px;
+  width: 70vw;
+}
+.About {
+  display: grid;
+  margin-top: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "prof up up up"
+    "prof mid mid mid"
+    "bot bot bot bot";
+}
+
+@media screen and (max-width: 800px) {
+  .About {
+    margin-top: 100px;
+    grid-template-areas:
+      "prof"
+      "up"
+      "mid"
+      "bot";
+  }
+  .up,
+  .mid {
+    width: 100vw;
+  }
+  .livePic {
+    width: auto;
+  }
+}

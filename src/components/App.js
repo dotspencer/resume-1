@@ -5,6 +5,7 @@ import About from "./About";
 import Projects from "./Projects";
 import "../styles/App.css";
 import "../styles/Menu.css";
+import "../styles/About.css";
 
 class App extends Component {
   render() {
@@ -24,17 +25,17 @@ class App extends Component {
               />
             </div>
               <ul>
-                <li>
+                <li className="menuItems">
                   <NavLink to="/About" className="menu">
                     About
                   </NavLink>
                 </li>
-                <li>
+                <li className="menuItems">
                   <NavLink to="/Projects" className="menu">
                     Projects
                   </NavLink>
                 </li>
-                <li>
+                <li className="menuItems">
                   <NavLink to="/" className="menu">
                     Home
                   </NavLink>

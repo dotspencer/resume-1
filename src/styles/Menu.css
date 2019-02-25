@@ -39,7 +39,7 @@
   list-style : none;
 }
 
-li {
+.menuItems{
   display    : inline;
   margin     : 0 2px 0 2px;
   padding    : 0 10px 0 10px;
@@ -48,7 +48,7 @@ li {
   cursor     : pointer;
 }
 
-li:hover {
+.menuItems:hover {
   color : tomato;
 }
 
@@ -63,7 +63,7 @@ li:hover {
   opacity     : 0.80;
 }
 
-li:active {
+.menuItems:active {
   cursor : default;
 }
 
@@ -76,6 +76,20 @@ li:active {
 
   .full {
     display : none;
+  }
+  .projects{
+    padding: 0;
+  }
+  .projects div{
+    margin-bottom: 20px;
+  }
+  .projects div img{
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .overview{
+    margin-bottom: 100px;
   }
 }
 

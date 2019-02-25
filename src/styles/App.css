@@ -10,7 +10,7 @@
   text-size-adjust : none;
   font-family      : "Open Sans",
                      sans-serif;
-  user-select      : none;
+  line-height      : 30px;
 }
 
 a {
@@ -28,6 +28,21 @@ body {
   background-position : center;
 }
 
+h1 {
+  font-family : 'Hind',
+                sans-serif;
+  font-family : 'Martel Sans',
+                sans-serif;
+}
+
+ul {
+  list-style-type : none;
+}
+
+.topics ul li:nth-child(2n+1) {
+  color : #00000054;
+}
+
 /* --------------GENERAL----------------- */
 
 .center {
@@ -36,6 +51,24 @@ body {
 
 .marginTop {
   margin-top : 150px;
+}
+
+.left {
+  left : 0;
+}
+
+.right {
+  right : 0;
+}
+
+.top {
+  position : absolute;
+  bottom   : 0;
+}
+
+.bottom {
+  position : absolute;
+  top      : 0;
 }
 
 /* --------------PROFILE----------------- */
@@ -72,13 +105,52 @@ body {
 }
 
 .overview {
-  max-width             : 1080px;
-  margin-bottom         : 100px;
-  grid-column-gap       : 30px;
-  grid-row-gap          : 30px;
-  grid-template-columns : repeat(auto-fit, minmax(500px, 1fr));
+  display       : flex;
+  width         : fit-content;
+  max-width     : 1080px;
+  margin-top    : 200px;
+  margin-bottom : 200px;
+  flex-wrap     : wrap;
 }
 
 .topics {
-  padding : 30px;
+  margin  : 0 auto;
+  padding : 60px 30px;
+}
+
+.languages {
+  width      : fit-content;
+  text-align : left;
+}
+
+.topics h2 {
+  text-align : center;
+}
+
+/* --------------Projects----------------- */
+
+.projects {
+  padding: 200px 0 500px 0;
+  display               : grid;
+  width                 : 50%;
+  max-width             : 500px;
+  margin                : 0 auto;
+  text-align            : center;
+  grid-template-columns : repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows    : repeat(2, 1fr);
+}
+
+.projects div {
+  position : relative;
+  width    : 100%;
+  height   : fit-content;
+}
+.projects div img{
+  margin: 10px;
+}
+.projectTitle{
+  margin: 0 auto;
+  width: fit-content;
+  padding: 100px;
+
 }

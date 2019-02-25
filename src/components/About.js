@@ -4,34 +4,34 @@ class About extends Component {
   render() {
     return (
       <>
-        <section className="overview marginTop center">
-          <div className="topics">
-            <h2>About</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea
+        <section className="overview marginTop center About">
+          <div className="livePic">
+            <img
+              src="../images/profileAbout.jpg"
+              alt="Picture of Trevor J. Smith"
+            />
           </div>
-          <div className="topics">
-            <h2>About</h2>
+          <div className="up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea
+            aliquip ex ea commodo consequat.
           </div>
-          <div className="topics">
-            <h2>About</h2>
+          <div className="mid">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea
+            aliquip ex ea commodo consequat.
           </div>
-          <div className="topics">
-            <h2>About</h2>
+          <div className="bot">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
           </div>
         </section>
       </>
