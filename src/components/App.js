@@ -16,18 +16,23 @@ class App extends Component {
     let menuItems = document.getElementsByClassName("menuItems");
     let content = document.getElementsByClassName("content");
     let mobileBar = document.getElementsByClassName("mobileBar");
+    let logo = document.getElementsByClassName("logo");
 
     function openOverlay() {
       menuList[0].classList.add("overlay");
       header[0].classList.add("darken");
-      wrapper[0].classList.add("cover");
+      wrapper[0].style.opacity = ".95";
       content[0].classList.add("noscroll");
+      mobileBar[0].classList.add("invert");
+      logo[0].style.color = "white";
     }
     function closeOverlay() {
       menuList[0].classList.remove("overlay");
       header[0].classList.remove("darken");
-      wrapper[0].classList.remove("cover");
+      wrapper[0].style.opacity = "0";
       content[0].classList.remove("noscroll");
+      mobileBar[0].classList.remove("invert");
+      logo[0].style.color = "black";
     }
     function toggleOverlay() {
       if (mq.matches) {
@@ -75,7 +80,7 @@ class App extends Component {
               </ul>
             </div>
           </section>
-          <div className="wrapper" onClick={toggleOverlay} />
+          <div className="wrapper cover" onClick={toggleOverlay} />
           <div className="content">
             <Route exact path="/" component={Main} />
             <Route exact path="/About" component={About} />

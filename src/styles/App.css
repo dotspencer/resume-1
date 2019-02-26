@@ -39,7 +39,9 @@ ul {
 .topics ul li:nth-child(2n + 1) {
   color: #00000054;
 }
-
+.invert {
+  filter: invert(1);
+}
 /* --------------GENERAL----------------- */
 
 .center {

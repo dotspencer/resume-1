@@ -57,6 +57,7 @@
   width: 30px;
   padding-top: 60%;
   opacity: 0.8;
+  transition: all 0.2s;
 }
 
 .menuItems:active {
@@ -64,16 +65,19 @@
 }
 
 .overlay {
+  right: -60px !important;
   visibility: visible !important;
 }
 
 .menuList {
+  right: -165px;
   position: relative;
   list-style: none;
+  transition: all 0.2s;
 }
 
 .darken {
-  background-color: #3e3e3e;
+  background-color: #0d0d0d;
 }
 .noscroll {
   opacity: 0;
@@ -89,7 +93,6 @@
     display: grid;
     visibility: hidden;
     position: absolute;
-    right: -60px;
     margin-top: 20px;
     opacity: 1;
   }
@@ -119,12 +122,13 @@
   }
 
   .overview {
+    margin-top: 30px;
     margin-bottom: 100px;
   }
 
   .wrapper {
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: all 0.2s;
   }
 
   .cover {
@@ -137,7 +141,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.95;
     overflow: hidden;
     background: inherit;
     box-shadow: inset 0 0 0 400px black;
@@ -151,5 +154,9 @@
 
   .short {
     display: none;
+  }
+
+  .projectDesctiption h2 {
+    text-align: left;
   }
 }

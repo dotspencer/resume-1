@@ -5,28 +5,28 @@ class Projects extends Component {
     return (
       <>
         <section className="overview marginTop center">
-          <div className="topics">
+          <div className="topics projectDesctiption">
             <h2>Projects</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea
           </div>
-          <div className="topics">
+          <div className="topics projectDesctiption">
             <h2>Projects</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea
           </div>
-          <div className="topics">
+          <div className="topics projectDesctiption">
             <h2>Projects</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea
           </div>
-          <div className="topics">
+          <div className="topics projectDesctiption">
             <h2>Projects</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
