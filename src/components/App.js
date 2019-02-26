@@ -9,32 +9,34 @@ import "../styles/About.css";
 
 class App extends Component {
   render() {
+    const mq = window.matchMedia("(max-width: 800px)");
     let menuList = document.getElementsByClassName("menuList");
     let wrapper = document.getElementsByClassName("wrapper");
     let header = document.getElementsByClassName("header");
     let menuItems = document.getElementsByClassName("menuItems");
     let content = document.getElementsByClassName("content");
+    let mobileBar = document.getElementsByClassName("mobileBar");
 
     function openOverlay() {
-      console.log("opened overlay");
       menuList[0].classList.add("overlay");
       header[0].classList.add("darken");
       wrapper[0].classList.add("cover");
       content[0].classList.add("noscroll");
     }
     function closeOverlay() {
-      console.log("closed overlay");
       menuList[0].classList.remove("overlay");
       header[0].classList.remove("darken");
       wrapper[0].classList.remove("cover");
       content[0].classList.remove("noscroll");
     }
     function toggleOverlay() {
-      if (!menuList[0].classList.contains("overlay")) {
-        openOverlay();
-      } else {
-        window.scrollTo(0, 0);
-        closeOverlay();
+      if (mq.matches) {
+        if (!menuList[0].classList.contains("overlay")) {
+          openOverlay();
+        } else {
+          window.scrollTo(0, 0);
+          closeOverlay();
+        }
       }
     }
 

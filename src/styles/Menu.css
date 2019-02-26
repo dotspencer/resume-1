@@ -81,6 +81,9 @@
   overflow: hidden;
 }
 @media screen and (max-width: 800px) {
+  .profile {
+    transform: translateY(15vh);
+  }
   .menu ul {
     direction: rtl;
     display: grid;
