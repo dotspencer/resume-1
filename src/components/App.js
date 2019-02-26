@@ -80,7 +80,7 @@ class App extends Component {
               </ul>
             </div>
           </section>
-          <div className="wrapper cover" onClick={toggleOverlay} />
+          <div className="wrapper cover" onClick={closeOverlay} />
           <div className="content">
             <Route exact path="/" component={Main} />
             <Route exact path="/About" component={About} />

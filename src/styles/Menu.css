@@ -70,7 +70,6 @@
 }
 
 .menuList {
-  right: -165px;
   position: relative;
   list-style: none;
   transition: all 0.2s;
@@ -96,7 +95,9 @@
     margin-top: 20px;
     opacity: 1;
   }
-
+  .menuList {
+    right: -165px;
+  }
   .menuItems {
     margin-top: 10px;
     color: white;
