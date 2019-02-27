@@ -29,13 +29,17 @@ class App extends Component {
       logo[0].style.color = "black";
     }
     function toggleOverlay() {
-      window.scrollTo(0, 0);
       if (mq.matches) {
         if (!menuList[0].classList.contains("overlay")) {
+          console.log("opened overlay");
           openOverlay();
         } else {
+          console.log("closed overlay");
           closeOverlay();
+          window.scrollTo(0, 0);
         }
+      } else {
+        window.scrollTo(0, 0);
       }
     }
 
