@@ -10,27 +10,30 @@ import "../styles/About.scss";
 class App extends Component {
   render() {
     const mq = window.matchMedia("(max-width: 800px)");
-    let menuList = document.getElementsByClassName("menuList");
     let wrapper = document.getElementsByClassName("wrapper");
     let menuItems = document.getElementsByClassName("menuItems");
     let mobileBar = document.getElementsByClassName("mobileBar");
     let logo = document.getElementsByClassName("logo");
 
     function openOverlay() {
-      menuList[0].classList.add("overlay");
+      for (var i = 0; i < menuItems.length; i++) {
+        menuItems[i].classList.add("overlay");
+      }
       wrapper[0].style.opacity = "1";
       mobileBar[0].classList.add("invert");
       logo[0].style.color = "white";
     }
     function closeOverlay() {
-      menuList[0].classList.remove("overlay");
+      for (var i = 0; i < menuItems.length; i++) {
+        menuItems[i].classList.remove("overlay");
+      }
       wrapper[0].style.opacity = "0";
       mobileBar[0].classList.remove("invert");
       logo[0].style.color = "black";
     }
     function toggleOverlay() {
       if (mq.matches) {
-        if (!menuList[0].classList.contains("overlay")) {
+        if (!menuItems[0].classList.contains("overlay")) {
           console.log("opened overlay");
           openOverlay();
         } else {
@@ -62,20 +65,26 @@ class App extends Component {
               </div>
               <nav className="menu">
                 <ul className="menuList">
-                  <li className="menuItems" onClick={toggleOverlay}>
-                    <NavLink to="/About" className="menu">
-                      About
-                    </NavLink>
+                  <li
+                    className="menuItems"
+                    style={{ transition: "all .2s" }}
+                    onClick={toggleOverlay}
+                  >
+                    <NavLink to="/About">About</NavLink>
                   </li>
-                  <li className="menuItems" onClick={toggleOverlay}>
-                    <NavLink to="/Projects" className="menu">
-                      Projects
-                    </NavLink>
+                  <li
+                    className="menuItems"
+                    style={{ transition: "all .4s" }}
+                    onClick={toggleOverlay}
+                  >
+                    <NavLink to="/Projects">Projects</NavLink>
                   </li>
-                  <li className="menuItems" onClick={toggleOverlay}>
-                    <NavLink to="/" className="menu">
-                      Home
-                    </NavLink>
+                  <li
+                    className="menuItems"
+                    style={{ transition: "all .6s" }}
+                    onClick={toggleOverlay}
+                  >
+                    <NavLink to="/">Home</NavLink>
                   </li>
                 </ul>
               </nav>

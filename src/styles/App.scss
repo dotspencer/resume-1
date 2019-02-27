@@ -149,14 +149,15 @@ ul {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.projects div {
-  position: relative;
-  width: 100%;
-  height: fit-content;
-}
-
-.projects div img {
-  margin: 10px;
+.projects {
+  div {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    img {
+      margin: 10px;
+    }
+  }
 }
 
 .projectTitle {

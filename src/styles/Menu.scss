@@ -13,7 +13,6 @@
   opacity: 1;
   background-color: white;
   text-align: center;
-  transition: all 0.2s;
   .logo {
     float: left;
     padding: 25px 20px;
@@ -35,19 +34,16 @@
     width: 30px;
     padding-top: 60%;
     opacity: 0.8;
-    transition: all 0.2s;
     img {
       width: 100%;
     }
   }
   .menuList {
     list-style: none;
-    transition: all 0.2s;
     .menuItems {
       display: inline;
       margin: 5px;
       padding: 0 10px 0 10px;
-      transition: 0.2s;
       cursor: pointer;
     }
     .menuItems:hover {
@@ -57,8 +53,7 @@
 }
 
 .overlay {
-  visibility: visible !important;
-  right: -60px !important;
+  margin-right: 195px !important;
 }
 
 .wrapper {
@@ -80,14 +75,13 @@
     .menuList {
       right: -180px;
       display: grid;
-      visibility: hidden;
       position: absolute;
       margin-top: 20px;
       opacity: 1;
-      direction: rtl;
       padding-bottom: 20px;
       font-size: 18pt;
       .menuItems {
+        position: relative;
         margin-top: 10px;
         color: white;
         font-size: 15pt;

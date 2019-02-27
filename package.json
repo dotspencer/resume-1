@@ -8,11 +8,6 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "bash copy.sh && webpack --mode production"
   },
-  "icons": [
-    {
-      "src": "favicon.ico"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Subtora/resume.git"
