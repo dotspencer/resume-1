@@ -76,6 +76,7 @@
 }
 
 .darken {
+  box-shadow: 0;
   background-color: #0d0d0d;
 }
 .noscroll {
