@@ -1,44 +1,48 @@
 .About div img {
   width: 100%;
 }
+
 .About div {
   margin: 0 auto;
 }
+
 .About div:not(.livePic) {
   padding: 30px;
 }
+
 .livePic {
-  grid-area: prof;
   width: 50vw;
   max-width: 300px;
-  /* background-color: red; */
+  grid-area: prof;
 }
-.up {
+
+.About:nth-child(2) {
   grid-area: up;
-  /* background-color: pink; */
 }
-.mid {
+
+.About:nth-child(3) {
   grid-area: mid;
-  /* background-color: green; */
 }
-.bot {
+
+.About:nth-child(4) {
   grid-area: bot;
-  /* background-color: blue; */
 }
-.up,
-.mid {
-  max-width: 700px;
+
+.About:nth-child(2),
+.About:nth-child(3) {
   width: 70vw;
+  max-width: 700px;
 }
+
 .About {
-  display: grid;
+  /* display: grid;
   margin-top: 200px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "prof up up up"
     "prof mid mid mid"
-    "bot bot bot bot";
+    "bot bot bot bot"; */
 }
 
 @media screen and (max-width: 800px) {
@@ -50,10 +54,12 @@
       "mid"
       "bot";
   }
-  .up,
-  .mid {
+
+  .mid,
+  .up {
     width: 100vw;
   }
+
   .livePic {
     width: auto;
   }

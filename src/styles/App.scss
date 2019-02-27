@@ -39,9 +39,11 @@ ul {
 .topics ul li:nth-child(2n + 1) {
   color: #00000054;
 }
+
 .invert {
   filter: invert(1);
 }
+
 /* --------------GENERAL----------------- */
 
 .center {
@@ -69,7 +71,13 @@ ul {
   position: absolute;
   top: 0;
 }
-
+.tab {
+  content: "";
+  padding-left: 2em;
+}
+.box-shadow {
+  box-shadow: 0 1px 10px 1px rgba(40, 41, 44, 0.1);
+}
 /* --------------PROFILE----------------- */
 
 .profile {
@@ -80,18 +88,17 @@ ul {
   transform: translateY(20vh);
 }
 
-.about,
-.picture img {
-  margin: 0 20px;
-}
-
 .about {
   padding: 15px;
   color: grey;
+  margin: 20px;
   background-color: white;
-  box-shadow: 0 1px 10px 1px rgba(40, 41, 44, 0.12);
   text-align: center;
   font-family: "Hind", sans-serif;
+  .about,
+  .picture img {
+    margin: 0 20px;
+  }
 }
 
 /* --------------OVERVIEW----------------- */
@@ -99,30 +106,34 @@ ul {
 .summary {
   width: 70%;
   max-width: 400px;
-  text-align: right;
+  text-align: left;
+  h1 {
+    text-align: center;
+  }
 }
-
 .overview {
   display: flex;
-  width: fit-content;
-  max-width: 1080px;
+  max-width: 800px;
   margin-top: 200px;
   margin-bottom: 200px;
   flex-wrap: wrap;
-}
-
-.topics {
-  margin: 0 auto;
-  padding: 60px 30px;
-}
-
-.languages {
-  width: fit-content;
-  text-align: left;
-}
-
-.topics h2 {
-  text-align: center;
+  .topics {
+    margin: 0 auto;
+    padding: 60px 30px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .education {
+    width: fit-content;
+    text-align: left;
+  }
+  .proficiency {
+    text-align: center;
+    ul {
+      padding: 0;
+    }
+  }
 }
 
 /* --------------Projects----------------- */

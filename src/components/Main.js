@@ -4,30 +4,30 @@ class Main extends Component {
   render() {
     return (
       <>
-      <div className="profile center">
+        <div className="profile center">
           <div className="item picture">
-            <img
-              src="images/headProfile.svg"
-              alt="profile picture"
-            />
+            <img src="images/headProfile.svg" alt="profile picture" />
           </div>
-          <div className="item about">
+          <div className="item about box-shadow">
             Illustrator | Front-End Developer | Writer
           </div>
-          </div>
+        </div>
         <div className="summary center">
           <h1>Hi, I'm Trevor.</h1>
           <p>
-            I have a passion for invention. Discovering new
-            solutions to problems; sketching original designs;
-            drafting and printing 3d models; creating works of art;
-            writing poems and stories. I've worked on many projects of
-            my own, and helped others acomplish theirs.
+            I have a passion for invention. Discovering new solutions to
+            problems; sketching original designs; drafting and printing 3d
+            models; creating works of art; writing poems and stories. I've
+            worked on many projects of my own, and helped others acomplish
+            theirs.
           </p>
-          <p>I'm currently a Junior at Weber State University
-            studying full-time within the BS of Computer Science Program.</p>
+          <p>
+            <span className="tab" />
+            I'm currently a Junior at Weber State University studying full-time
+            within the BS of Computer Science Program.
+          </p>
         </div>
-        <section className="overview center">
+        <section className="overview center box-shadow">
           <div className="topics education">
             <h2>Education</h2>
             <ul>
@@ -40,14 +40,14 @@ class Main extends Component {
               <li>CS 2550 : Database Design & SQL</li>
             </ul>
           </div>
-          <div className="topics languages">
+          <div className=" topics proficiency">
             <h2>Proficiency</h2>
             <ul>
               <li>-</li>
               <li>-</li>
               <li>C++</li>
               <li>Java</li>
-              <li>HTML, CSS, Javascript, JsReact</li>
+              <li>HTML, CSS, Javascript, Reactjs</li>
               <li>C</li>
               <li>Oracle SQL</li>
             </ul>
@@ -56,11 +56,34 @@ class Main extends Component {
 
         <h1 className="projectTitle">Projects</h1>
         <section className="projects">
-
-          <div><img src="https://via.placeholder.com/250" alt="image" className="right top"/></div>
-          <div><img src="https://via.placeholder.com/200" alt="image" className="left top"/></div>
-          <div><img src="https://via.placeholder.com/300" alt="image" className="right bottom"/></div>
-          <div><img src="https://via.placeholder.com/250" alt="image" className="left bottom"/></div>
+          <div>
+            <img
+              src="https://via.placeholder.com/250"
+              alt="image"
+              className="right top"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/200"
+              alt="image"
+              className="left top"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/300"
+              alt="image"
+              className="right bottom"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/250"
+              alt="image"
+              className="left bottom"
+            />
+          </div>
         </section>
       </>
     );

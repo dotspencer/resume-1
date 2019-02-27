@@ -1,0 +1,137 @@
+/* --------------HEADER----------------- */
+
+.header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  background-color: white;
+  text-align: center;
+  transition: all 0.2s;
+  .logo {
+    float: left;
+    padding: 25px 20px;
+    opacity: 0.95;
+    text-align: center;
+    .short {
+      width: 30px;
+      font-family: sans-serif;
+    }
+  }
+}
+
+.menu {
+  float: right;
+  margin-right: 40px;
+  padding-top: 5px;
+  .mobileBar {
+    position: relative;
+    width: 30px;
+    padding-top: 60%;
+    opacity: 0.8;
+    transition: all 0.2s;
+    img {
+      width: 100%;
+    }
+  }
+  .menuList {
+    list-style: none;
+    transition: all 0.2s;
+    .menuItems {
+      display: inline;
+      margin: 5px;
+      padding: 0 10px 0 10px;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .menuItems:hover {
+      color: tomato;
+    }
+  }
+}
+
+.overlay {
+  visibility: visible !important;
+  right: -60px !important;
+}
+
+.wrapper {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+@media screen and (max-width: 800px) {
+  .profile {
+    transform: translateY(15vh);
+  }
+
+  .menu {
+    .menuList {
+      right: -180px;
+      display: grid;
+      visibility: hidden;
+      position: absolute;
+      margin-top: 20px;
+      opacity: 1;
+      direction: rtl;
+      padding-bottom: 20px;
+      font-size: 18pt;
+      .menuItems {
+        margin-top: 10px;
+        color: white;
+        font-size: 15pt;
+      }
+    }
+  }
+
+  .fullName {
+    display: none;
+  }
+
+  .projects {
+    padding: 0;
+  }
+
+  .projects div {
+    margin-bottom: 20px;
+  }
+
+  .projects div img {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .overview {
+    margin: 30px 15px 100px 15px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menuList {
+    position: relative;
+  }
+  .mobileBar {
+    display: none;
+  }
+  .shortName {
+    display: none;
+  }
+
+  .projectDesctiption {
+    h2 {
+      text-align: left;
+    }
+  }
+}
